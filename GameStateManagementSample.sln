@@ -7,15 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagement", "Game
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{B7157C98-57CE-457E-A45C-9D1D746A7B93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample (DesktopGL)", "Platforms\DesktopGL\GameStateManagementSample (DesktopGL).csproj", "{055FEDD0-AB52-45CE-A74D-48C009E4DB73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample.DesktopGL", "Platforms\DesktopGL\GameStateManagementSample.DesktopGL.csproj", "{055FEDD0-AB52-45CE-A74D-48C009E4DB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample (WindowsDX)", "Platforms\WindowsDX\GameStateManagementSample (WindowsDX).csproj", "{360266C3-DF94-4A96-A1C9-915D97D6549F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample.WindowsDX", "Platforms\WindowsDX\GameStateManagementSample.WindowsDX.csproj", "{360266C3-DF94-4A96-A1C9-915D97D6549F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample (UWP)", "Platforms\WindowsUWP\GameStateManagementSample (UWP).csproj", "{98E44B20-48E2-4B36-9A87-D626E2C598BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample.UWP", "Platforms\WindowsUWP\GameStateManagementSample.UWP.csproj", "{98E44B20-48E2-4B36-9A87-D626E2C598BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample (Android)", "Platforms\Android\GameStateManagementSample (Android).csproj", "{39138599-48BD-4DCF-83AF-78DBB4C23277}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample.Android", "Platforms\Android\GameStateManagementSample.Android.csproj", "{39138599-48BD-4DCF-83AF-78DBB4C23277}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample (iOS)", "Platforms\iOS\GameStateManagementSample (iOS).csproj", "{F70F5F39-72F9-45FC-97DA-FAA70C66BA65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateManagementSample.iOS", "Platforms\iOS\GameStateManagementSample.iOS.csproj", "{F70F5F39-72F9-45FC-97DA-FAA70C66BA65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -166,6 +166,7 @@ Global
 		{360266C3-DF94-4A96-A1C9-915D97D6549F}.AppStore|x86.ActiveCfg = Release|x86
 		{360266C3-DF94-4A96-A1C9-915D97D6549F}.AppStore|x86.Build.0 = Release|x86
 		{360266C3-DF94-4A96-A1C9-915D97D6549F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{360266C3-DF94-4A96-A1C9-915D97D6549F}.Debug|Any CPU.Build.0 = Debug|x86
 		{360266C3-DF94-4A96-A1C9-915D97D6549F}.Debug|ARM.ActiveCfg = Debug|x86
 		{360266C3-DF94-4A96-A1C9-915D97D6549F}.Debug|iPhone.ActiveCfg = Debug|x86
 		{360266C3-DF94-4A96-A1C9-915D97D6549F}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
@@ -216,6 +217,7 @@ Global
 		{98E44B20-48E2-4B36-9A87-D626E2C598BB}.AppStore|x86.Build.0 = Release|x86
 		{98E44B20-48E2-4B36-9A87-D626E2C598BB}.AppStore|x86.Deploy.0 = Release|x86
 		{98E44B20-48E2-4B36-9A87-D626E2C598BB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{98E44B20-48E2-4B36-9A87-D626E2C598BB}.Debug|Any CPU.Build.0 = Debug|x86
 		{98E44B20-48E2-4B36-9A87-D626E2C598BB}.Debug|ARM.ActiveCfg = Debug|ARM
 		{98E44B20-48E2-4B36-9A87-D626E2C598BB}.Debug|ARM.Build.0 = Debug|ARM
 		{98E44B20-48E2-4B36-9A87-D626E2C598BB}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -328,6 +330,7 @@ Global
 		{F70F5F39-72F9-45FC-97DA-FAA70C66BA65}.AppStore|x64.ActiveCfg = AppStore|iPhone
 		{F70F5F39-72F9-45FC-97DA-FAA70C66BA65}.AppStore|x86.ActiveCfg = AppStore|iPhone
 		{F70F5F39-72F9-45FC-97DA-FAA70C66BA65}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{F70F5F39-72F9-45FC-97DA-FAA70C66BA65}.Debug|Any CPU.Build.0 = Debug|iPhone
 		{F70F5F39-72F9-45FC-97DA-FAA70C66BA65}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{F70F5F39-72F9-45FC-97DA-FAA70C66BA65}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{F70F5F39-72F9-45FC-97DA-FAA70C66BA65}.Debug|iPhone.Build.0 = Debug|iPhone
