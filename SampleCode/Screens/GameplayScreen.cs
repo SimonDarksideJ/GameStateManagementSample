@@ -31,6 +31,8 @@ namespace GameStateManagementSample
         ContentManager content;
         SpriteFont gameFont;
 
+        Texture2D ship;
+
         Vector2 playerPosition = new Vector2(100, 100);
         Vector2 enemyPosition = new Vector2(100, 100);
 
@@ -71,6 +73,7 @@ namespace GameStateManagementSample
                     content = new ContentManager(ScreenManager.Game.Services, "Content");
 
                 gameFont = content.Load<SpriteFont>("gamefont");
+                ship = content.Load<Texture2D>("blueships1");
 
                 // A real game would probably have more content than this sample, so
                 // it would take longer to load. We simulate that by delaying for a
@@ -157,6 +160,7 @@ namespace GameStateManagementSample
 
                 // TODO: this game isn't very fun! You could probably improve
                 // it by inserting something more interesting in this space :-)
+            
             }
         }
 
@@ -248,6 +252,8 @@ namespace GameStateManagementSample
 
             spriteBatch.DrawString(gameFont, "Insert Gameplay Here",
                                    enemyPosition, Color.DarkRed);
+
+            spriteBatch.Draw(ship, playerPosition, Color.White);
 
             spriteBatch.End();
 
