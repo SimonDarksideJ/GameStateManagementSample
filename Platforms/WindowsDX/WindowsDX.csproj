@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+    <ItemGroup>
+    <Compile Include="..\..\SampleCode\Game.cs" Link="Game.cs" />
+    <Compile Include="..\..\SampleCode\ScreenFactory.cs" Link="ScreenFactory.cs" />
+    <Compile Include="..\..\SampleCode\Screens\BackgroundScreen.cs" Link="Screens\BackgroundScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\Button.cs" Link="Screens\Button.cs" />
+    <Compile Include="..\..\SampleCode\Screens\GameplayScreen.cs" Link="Screens\GameplayScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\LoadingScreen.cs" Link="Screens\LoadingScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\MainMenuScreen.cs" Link="Screens\MainMenuScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\MenuEntry.cs" Link="Screens\MenuEntry.cs" />
+    <Compile Include="..\..\SampleCode\Screens\MenuScreen.cs" Link="Screens\MenuScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\MessageBoxScreen.cs" Link="Screens\MessageBoxScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\OptionsMenuScreen.cs" Link="Screens\OptionsMenuScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\PauseMenuScreen.cs" Link="Screens\PauseMenuScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\PhoneMainMenuScreen.cs" Link="Screens\PhoneMainMenuScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\PhoneMenuScreen.cs" Link="Screens\PhoneMenuScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\PhonePauseScreen.cs" Link="Screens\PhonePauseScreen.cs" />
+    <Compile Include="..\..\SampleCode\Screens\PlayerIndexEventArgs.cs" Link="Screens\PlayerIndexEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="..\..\ContentProject\Content\Content.mgcb" Link="Content\Content.mgcb" />
+  </ItemGroup>  
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+  </ItemGroup>  
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>  
+  <Import Project="..\..\GameStateManagement\GameStateManagement.projitems" Label="Shared" />
+</Project>
